@@ -1,0 +1,9 @@
+What is Programming? 
+Pemrograman adalah proses mebuat sejumlah instruksi kepada komputer untuk melakukan tugas.
+
+What is Programming Language?
+Bahasa pemrograman adalah kosa kata/daftar kata dan sejumlah aturan tata bahasa untuk memberikan instruksi pada komputer untuk melakukan tugas spesifik.
+
+What is Algorithm?
+Sekumpulan prosedur langkah demi langkah atau sekumpulan aturan yang harus di ikuti untuk menyelesaikan tugas atau memecahkan masalah tertuntu.
+

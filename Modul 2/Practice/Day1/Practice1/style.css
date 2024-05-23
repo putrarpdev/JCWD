@@ -1,0 +1,48 @@
+select{
+    color: orange;
+}
+
+div{
+    border: 1px outset black;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.mobil{
+    color: aqua;
+}
+
+#buah{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: purple;
+}
+
+button{
+    color: hotpink;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: black;
+    background-color: aqua;
+}
+
+body{
+    background-image: url(image.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.lorem{
+    color: palevioletred;
+    line-height: 150%;
+    font-style: italic;
+    letter-spacing:.23vw;
+    margin: 10% 10% 10% 10%;
+}
+
+p::first-letter{
+    font-size: 1.5em;
+}

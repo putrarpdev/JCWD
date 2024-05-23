@@ -1,0 +1,20 @@
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    background-color: orange;
+    text-align: center;
+}
+
+input[type="radio"]{
+    font-weight: bold;
+}
+
+img{
+    padding: 0.25em;
+    width: 10em;
+    height: 6.5em;
+}
+
+td {
+    font-weight: bold;
+}
