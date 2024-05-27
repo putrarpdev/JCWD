@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .customText{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <h1 id="text">Original Text</h1>
+            <button type="button" onclick="updateText()">Update Text</button>
+        </div>
+        <div>
+            <div id="test">
+                <h1>test</h1>
+            </div>
+            <button type="button" onclick="updateTest()">Update Text</button>    
+        </div>
+        <div>
+            <div id="test2">
+                <h1 id="siblingElement">test</h1>
+            </div>
+            <button type="button" onclick="updateTest2()">Update Text</button>    
+            <button type="button" onclick="removeTest2()">Remove Text</button>    
+            <button type="button" onclick="serAttribute()">Remove Text</button>    
+            <button id="mybutton">Click Me!</button>
+        </div>
+    </div>
+    <script>
+        function updateText(){
+            const element = document.getElementById("text");
+            console.log(element);
+            element.innerText = "Updated Text";
+        }
+        function updateTest(){
+            const element = document.getElementById("test");
+            element.innerHTML = "<p>test</p>";
+        }
+        function updateTest2(){
+            const newP = document.createElement("p");
+            newP.innerText = "This is a new paragraph";
+
+            const parentElement = document.getElementById("test2");
+            //parentElement.appendChild(newP);
+
+            const siblingElement = document.getElementById("siblingElement")
+            parentElement.insertBefore(newP, siblingElement);
+        }
+        function removeTest2(){            
+            const elementToRemove = document.getElementById("siblingElement");
+            //parentElement.appendChild(newP);
+
+            const parentElement = elementToRemove.parentElement;
+            parentElement.removeChild(elementToRemove);
+        }
+        function serAttribute(){
+            const targetElement = document.getElementById("siblingElement");
+            //targetElement.setAttribute("class", "customText");
+            targetElement.style.textAlign = "center";
+            targetElement.style.color = "blue";
+        }
+
+        const button = document.getElementById("mybutton")
+        button.addEventListener("click", function(){
+            alert("Hi");
+        })
+    </script>
+</body>
+</html>
