@@ -1,0 +1,1042 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hq5jzaz3arfb"
+          }
+        },
+        "id": "blog",
+        "type": "ContentType",
+        "createdAt": "2024-06-12T12:31:44.496Z",
+        "updatedAt": "2024-06-12T12:38:32.508Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-12T12:38:32.508Z",
+        "firstPublishedAt": "2024-06-12T12:31:45.024Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/hq5jzaz3arfb/environments/master/content_types/blog"
+      },
+      "displayField": "title",
+      "name": "Blog",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "summary",
+          "name": "Summary",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "details",
+          "name": "Details",
+          "type": "RichText",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "heading-1"
+              ],
+              "message": "Only heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, inline entry, and heading 1 nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "articleImage",
+          "name": "Article Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "author",
+          "name": "Author",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "createdAt",
+          "name": "Created At",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "hq5jzaz3arfb",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2024-06-12T12:31:45.229Z",
+        "createdBy": {
+          "sys": {
+            "id": "2F7UdVvNTttlZpOTlFHjUL",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-06-12T12:38:33.548Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2F7UdVvNTttlZpOTlFHjUL",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blog",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "settings": {
+          },
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "summary",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "details",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "articleImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "author",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "createdAt",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hq5jzaz3arfb"
+          }
+        },
+        "id": "2878fJtdl02DIMJg8146Co",
+        "type": "Entry",
+        "createdAt": "2024-06-12T12:48:06.254Z",
+        "updatedAt": "2024-06-12T12:55:54.414Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2024-06-12T12:55:54.414Z",
+        "firstPublishedAt": "2024-06-12T12:55:54.414Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blog"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/hq5jzaz3arfb/environments/master/entries/2878fJtdl02DIMJg8146Co"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Oona Indonesia, Perusahaan Asuransi Umum dengan Pertumbuhan Pesat di Indonesia Meluncurkan Platform Digital MyOONA.id"
+        },
+        "slug": {
+          "en-US": "oona-indonesia-perusahaan-asuransi-umum-dengan-pertumbuhan-pesat-di"
+        },
+        "summary": {
+          "en-US": "Oona Indonesia, Perusahaan Asuransi Umum dengan Pertumbuhan Pesat di Indonesia Meluncurkan Platform Digital MyOONA.id"
+        },
+        "details": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Jakarta, 13 Maret 2024 ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "- Oona Insurance, perusahaan asuransi umum digital terkemuka di Asia Tenggara yang memiliki kehadiran kuat di Indonesia, hari ini meluncurkan MyOONA.id, platform digital terkini yang sangat dinantikan bagi",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " e-commerce",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " asuransi di Indonesia. Oona Indonesia juga meluncurkan",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " Asuransi Mobil Mudik;",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " perlindungan eksklusif asuransi mobil jangka pendek yang secara khusus dirancang untuk memfasilitasi kebutuhan mudik, bertepatan dengan periode Lebaran mendatang bagi masyarakat Indonesia.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "MyOONA.id menawarkan tiga kategori produk asuransi yang mudah diakses: ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "asuransi perjalanan, keterlambatan penerbangan,",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " dan ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "kendaraan bermotor",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " (mobil & sepeda motor). Platform digital ini menawarkan fitur-fitur utama yang dirancang untuk memberikan ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "end-user experience",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " yang menyenangkan:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "1. Optimalisasi untuk Ponsel: Pelanggan dapat menikmati akses ke platform dengan lancar di semua perangkat, termasuk telepon seluler mereka.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "2. Pengalaman Cepat dan Lancar: Proses pembelian ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "online",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " telah disederhanakan secara cermat, memastikan pelanggan dapat dengan mudah membeli produk ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "direct to consumer",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " (D2C) seperti asuransi kendaraan bermotor, perjalanan, dan keterlambatan penerbangan, serta mengajukan klaim dengan mudah.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "3. Aksesibilitas dan Fleksibilitas: Pelanggan memiliki akses ke berbagai opsi pembayaran, termasuk rencana pembayaran fleksibel dengan opsi pembayaran cicilan 0% untuk 3, 6, dan 12 bulan, guna memenuhi beragam preferensi keuangan pelanggan.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "4. Penggunaan Teknologi Inovatif: Proses inspeksi menggunakan pemeriksaan Artificial intelligence (AI) ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "online",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " untuk meningkatkan deteksi kecacatan pada kendaraan untuk asuransi kendaraan bermotor, menggunakan pengenalan karakter optik (Optical Character Recognition – OCR) untuk mengubah gambar kamera dan Portable Document Format (PDF) menjadi teks untuk menyederhanakan proses KYC, dan AI Generatif untuk meningkatkan fungsionalitas situs web.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Dalam momen peluncuran ini, ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "Abhishek Bhatia, Founder and Group Chief Executive Officer, Oona Insurance",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " menyatakan, \"Ini merupakan momen yang historis bagi kami semua. Kami memulai perjalanan untuk menjadi perusahaan asuransi yang paling transformasional dan memahami pelanggan di pasar Asia Tenggara. Untuk itu, kami menghadirkan teknologi dan produk baru untuk pelanggan kami. Dengan diluncurkannya MyOONA.id, visi kami menjadi kenyataan. Kini pelanggan dapat membeli berbagi produk asuransi secara online hanya dengan beberapa langkah mudah. Platform ini, bersama dengan penawaran produk inovatif seperti Asuransi Mobil Mudik, adalah bukti komitmen kami yang teguh untuk memberikan manfaat yang terbaik di pasar Indonesia.”",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Laporan Jasa Raharja 2023 menekankan urgensi dalam memastikan keselamatan masyarakat Indonesia selama Mudik Lebaran karena terdapat 726 kasus kematian dan 5.894 kecelakaan lalu lintas yang dilaporkan selama 18-28 April 2023. Oona memahami keinginan masyarakat Indonesia untuk kembali ke keluarga mereka di kampung halaman dengan aman, itulah mengapa Asuransi Mobil Mudik diluncurkan melalui kampanye #MudikTenangBarengOONA (#WorryFreeMudikWithOONA). Dengan menawarkan proses pembelian yang mudah di MyOONA.id tanpa perlu inspeksi mobil atau mengunggah dokumen yang rumit, Oona ingin memberikan kenyamanan dengan memanfaatkan kemampuan digital kepada pemilik mobil di perkotaan yang sering berkendara, untuk memastikan perjalanan mereka aman dan bebas dari kekhawatiran.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Vincent C. Soegianto, Chief Executive Officer,",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " Oona Indonesia mengatakan, “Pelanggan tetap menjadi fokus utama dari apa yang kami lakukan selama kami menavigasi lanskap asuransi yang dinamis di Indonesia. Platform MyOONA.id mendemokratisasi akses asuransi bagi masyarakat Indonesia. Kami juga memahami pentingnya menyesuaikan produk kami untuk memenuhi gaya hidup dan kebutuhan masyarakat yang beragam khususnya di Indonesia. Oleh karena itu, kami meluncurkan Asuransi Mobil Mudik, menunjukkan pemahaman mendalam kami tentang pasar Indonesia. Produk ini dirancang khusus untuk masyarakat Indonesia sehingga memungkinkan mereka untuk fokus pada hal penting: berkumpul dengan keluarga dalam kondisi aman selama Lebaran.”",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Untuk memastikan keterjangkauan dan aksesibilitas bagi semua masyarakat Indonesia, premi Asuransi Mobil Mudik dijual dengan harga terjangkau sebesar Rp 49.000 untuk perlindungan selama 10 hari yang tersedia pada periode 12 Maret hingga 30 April 2024. Produk asuransi ini memberikan perlindungan yang mencakup pertanggungan Total Loss Only, perlindungan kecelakaan diri bagi pengemudi dan penumpang, perlindungan tanggung jawab hukum pihak ketiga, serta roadside assistance dan Pusat Klaim 24/7, sehingga memberikan ketenangan selama perjalanan.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Oona Indonesia memiliki Risk Based Capital/rasio solvabilitas (RBC) yang kokoh sebesar 696,48% dan total ekuitas melebihi Rp 1,53 triliun per 31 Desember 2023 (unaudited). Data tersebut merupakan bukti kekuatan finansial Oona Indonesia dan kepatuhan yang ketat terhadap standar peraturan. Hal ini memastikan kredibilitas dan komitmen kami untuk selalu memberikan pelayanan prima di Indonesia.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Tentang Oona Insurance",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Berkantor pusat di Singapura, Oona Insurance adalah platform asuransi umum digital terkemuka dan didukung oleh Warburg Pincus. Didirikan pada tahun 2022, Oona Insurance bertujuan untuk menjadi perusahaan asuransi umum pilihan bagi mitra dan pelanggan melalui strategi beli dan bangun, memanfaatkan pilar layanan pelanggan yang unggul, teknologi canggih, dan merek yang sudah mapan di Asia Tenggara. Oona Insurance saat ini beroperasi di dua pasar di kawasan ini: Indonesia dan Filipina.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Di Indonesia, Oona beroperasi melalui entitas asuransi berlisensinya, PT Asuransi Bina Dana Arta, Tbk. Oona Indonesia, merek terpadu baru dari entitas-entitas ini, menawarkan produk dan layanan berkualitas sejak awal tahun 2023, menjadi landasan yang kokoh bagi ekspansi Oona Insurance di pasar asuransi yang berkembang pesat di Asia Tenggara.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Untuk informasi lebih lanjut tentang Oona Insurance, silakan kunjungi:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "http://www.oona-insurance.com/"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "www.oona-insurance.com",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          }
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "articleImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1EThotHXfnOvkjB8LLehVW"
+            }
+          }
+        },
+        "author": {
+          "en-US": "Putra Rizki Pradana"
+        },
+        "createdAt": {
+          "en-US": "2024-06-12T00:00+07:00"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hq5jzaz3arfb"
+          }
+        },
+        "id": "1EThotHXfnOvkjB8LLehVW",
+        "type": "Asset",
+        "createdAt": "2024-06-12T12:50:14.171Z",
+        "updatedAt": "2024-06-12T12:55:22.193Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-12T12:55:22.193Z",
+        "firstPublishedAt": "2024-06-12T12:55:22.193Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/hq5jzaz3arfb/environments/master/assets/1EThotHXfnOvkjB8LLehVW"
+      },
+      "fields": {
+        "title": {
+          "en-US": "MyOONAid Launch"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/hq5jzaz3arfb/1EThotHXfnOvkjB8LLehVW/599f08517ffcb487b3c1dafa0f74c5ba/MyOONAid_Launch.jpg",
+            "details": {
+              "size": 2726020,
+              "image": {
+                "width": 3926,
+                "height": 2617
+              }
+            },
+            "fileName": "MyOONAid Launch.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "6pNrDKL9eBzmieO8l5ZHM3",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hq5jzaz3arfb"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "6f9fcb8f-8c58-445b-9e5e-8d6d04116509"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "createdAt": "2024-06-12T12:25:48Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "updatedAt": "2024-06-12T12:25:48Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "6q7JlUf2igbINqSqP3mYez",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hq5jzaz3arfb"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "createdAt": "2024-06-12T12:25:48Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2F7UdVvNTttlZpOTlFHjUL"
+          }
+        },
+        "updatedAt": "2024-06-12T12:25:48Z"
+      }
+    }
+  ]
+}

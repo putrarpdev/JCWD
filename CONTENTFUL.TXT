@@ -1,0 +1,6 @@
+npm i contentful
+npm i contentful @contentful/rich-text-html-renderer @contentful/rich-text-react-renderer @contentful/rich-text-types
+npm i -D cf-content-types-generator
+npm i contentful-cli
+ "cf-export": "contentful space export --config src/contentful/export-config.json --management-token CFPAT-IGZNZPDYpW-wIh6I4S7fPPQ7TwZN9egaUp9ONPRiEWg --space-id wxwsagx2fy4n"
+ "cf-content-types-generator src/contentful/export.json --out src/types/contentful"
