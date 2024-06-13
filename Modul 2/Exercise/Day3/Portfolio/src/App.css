@@ -20,7 +20,7 @@
 }
 
 .jtbg {
-  background-image: url(../public/vector1.png), url(../public/vector1.png);
+  background-image: url(../public/vector1.png), url(../public/vector2.png);
   background-position: left top, right top;
   background-repeat: no-repeat, no-repeat;
   background-color: black;
