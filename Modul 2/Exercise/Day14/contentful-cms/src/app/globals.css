@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -17,17 +17,21 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(107.89deg, #9733EE -25.36%, #482C77 100%);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.bg-oona-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 53 204 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-oona-purple:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 45 119 / var(--tw-bg-opacity));
 }
